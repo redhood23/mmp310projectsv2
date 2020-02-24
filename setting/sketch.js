@@ -7,7 +7,6 @@
 var jerry;  // var declaration
 var jenny;
 var lake; 
-var mta;
 var walk;
 
 
@@ -21,7 +20,6 @@ function preload() {
 	jenny = loadImage('jenny.png');
     lake = loadImage('lake.png');
     tree = loadImage('tree.png');
-    mta = loadImage('mta.png'); 
     build = loadImage('build.png');
    walk = loadImage('walk.png');
     boat = loadImage('boat.png');
@@ -73,7 +71,7 @@ function draw() {
 
 		// mta
 		
-		image(mta, 416, height - 350);
+		
         image(build, 648, height - 550);
      
 	}
