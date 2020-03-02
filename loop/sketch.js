@@ -18,9 +18,17 @@ function preload() {
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
+    setting();
 }
 
-function draw() {
+
+function mousePressed() {
+	setting();
+}
+
+
+
+function setting() {
 	// background colors
 	background('#4996d1');
 
@@ -35,18 +43,24 @@ function draw() {
 	
 	// clouds
 	for (let x = -40; x <= width; x += 200) {
-		image(cloudImage, x, 50 - x/10);
-		image(cloudImage, x, 200 - x/10);
+//		image(cloudImage, random(width), x, 50 - x/10);
+//		image(cloudImage, x, 200 - x/10);
+        
+        	let y = random(height/3);
+		let offset = random(-100, 100);
+		image(cloudImage, x + offset, y);
 	}
 
 	// trees
 	for (let x = 90; x <= width; x += 370) {
-		image(treeImage, x, height/2 - 130 + x/20);
+//		image(treeImage, x, height/2 - 130 + x/20);
+        image(treeImage, random(width), height/2 - 150 + x/20);
 	}
 
     // birds
 	for (let x = 110; x <= width; x += 390) {
-		image(birdImage, x, height/2 - 120 + x/10);
+//		image(birdImage, x, height/2 - 120 + x/10);
+        image(birdImage, random(width), height/2 - 150 + x/20);
 	}
     
 	// deer
