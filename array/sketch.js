@@ -14,7 +14,7 @@ function setting() {
 }
 
 function preload() {
-    Cloud = loadImage('Cloud.png')
+    Cloud = loadImage('Cloud.gif')
     ground = loadImage('ground.png')
     air = loadImage('air.gif')
     bird = loadImage('bird.gif')
